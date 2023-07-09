@@ -31,4 +31,5 @@ jobs:
     S3_KEY: ${{ secrets.S3_KEY }}
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    ENDPOINT: https://storage.yandexcloud.net // You can also change default endpoint, this var can be omitted
 ```
