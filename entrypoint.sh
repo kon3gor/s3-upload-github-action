@@ -17,6 +17,7 @@ else
 	aws --endpoint-url=${ENDPOINT} \
 		s3 cp ${FILE} s3://${S3_BUCKET}/${S3_KEY} \ 
 		--region ${AWS_REGION} $*
+fi
 
 rm -rf ~/.aws
 
