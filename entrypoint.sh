@@ -14,8 +14,7 @@ if [[ -z "$ENDPOINT" ]]; then
 	aws s3 cp ${FILE} s3://${S3_BUCKET}/${S3_KEY} \
 	  --region ${AWS_REGION} $*
 else
-	aws --endpoint-url=${ENDPOINT} \
-		s3 cp ${FILE} s3://${S3_BUCKET}/${S3_KEY} \ 
+	aws --endpoint-url=${ENDPOINT} s3 cp ${FILE} s3://${S3_BUCKET}/${S3_KEY} \
 		--region ${AWS_REGION} $*
 fi
 
